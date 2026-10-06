@@ -1,10 +1,10 @@
 #Route53
-# variable "domain_name" {
-#   type = string
-# }
-
 variable "zone_name" {
   type = string
+}
+
+variable "zone_id" {
+  
 }
 
 variable "route53_records" {
