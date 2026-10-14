@@ -7,6 +7,10 @@ variable "zone_id" {
   
 }
 
+variable "allow_overwrite" {
+  
+}
+
 variable "route53_records" {
   type = map(object({
     name    = string

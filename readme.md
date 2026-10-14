@@ -4,6 +4,7 @@
         source = "../../terraform-aws-route53"
         zone_id = data.aws_route53_zone.expense.zone_id
         zone_name = var.zone_name
+        allow_overwrite = true
 
         route53_records = {
             mysql = {

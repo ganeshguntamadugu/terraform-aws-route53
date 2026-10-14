@@ -9,6 +9,7 @@ for_each = var.route53_records
   name    = each.value.name
   type    = each.value.type
   ttl     = each.value.ttl
+  allow_overwrite = var.allow_overwrite
 
   records = each.value.records
 }
